@@ -33,15 +33,6 @@
               
 
         </style>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Image Slideshow</title>
-       <style>
-      /* Style to center the image */
-        #slide-container {
-          text-align: center;
-        }
-       </style>
       
     <style>
 p.ex1 {
@@ -185,7 +176,21 @@ Formatting some equations using MathML
   
   <hr>
 
-<h2>PowerPoint Slide Images</h2>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slideshow</title>
+  <style>
+    /* Style to center the image */
+    #slide-container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>PowerPoint Slide Images</h2>
 
   <div id="slide-container">
     <img id="slide" src="slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
@@ -193,7 +198,7 @@ Formatting some equations using MathML
 
   <script>
     // Array of slide image URLs
-    var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg"]; // Add more slide URLs as needed
+    var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"]; // Add more slide URLs as needed
     var currentSlide = 0;
 
     function showSlide() {
@@ -217,8 +222,8 @@ Formatting some equations using MathML
     // For example, next and previous buttons
     document.write('<button onclick="prevSlide()">Previous</button>');
     document.write('<button onclick="nextSlide()">Next</button>');
-    
   </script>
+
 
   
 
