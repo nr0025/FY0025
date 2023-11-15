@@ -185,6 +185,27 @@ Formatting some equations using MathML
     /* Style to center the image */
     #slide-container {
       text-align: center;
+      position: relative;
+    }
+
+    /* Style for the buttons */
+    .button-container {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 10px; /* Add some margin between the image and buttons */
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 5px; /* Add some margin between the buttons */
     }
   </style>
 </head>
@@ -194,6 +215,15 @@ Formatting some equations using MathML
 
   <div id="slide-container">
     <img id="slide" src="slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
+    <div class="button-container">
+      <!-- Dynamically create and append buttons for each slide -->
+      <button class="button" onclick="showSlideNumber(1)">1</button>
+      <button class="button" onclick="showSlideNumber(2)">2</button>
+      <button class="button" onclick="showSlideNumber(3)">3</button>
+      <button class="button" onclick="showSlideNumber(4)">4</button>
+      <button class="button" onclick="prevSlide()">Previous</button>
+      <button class="button" onclick="nextSlide()">Next</button>
+    </div>
   </div>
 
   <script>
@@ -215,13 +245,14 @@ Formatting some equations using MathML
       showSlide();
     }
 
+    // Function to show a specific slide based on the button clicked
+    function showSlideNumber(slideNumber) {
+      currentSlide = slideNumber - 1;
+      showSlide();
+    }
+
     // Call showSlide() to display the first slide
     showSlide();
-
-    // You can add buttons or other controls to navigate through the slides
-    // For example, next and previous buttons
-    document.write('<button onclick="prevSlide()">Previous</button>');
-    document.write('<button onclick="nextSlide()">Next</button>');
   </script>
 
 
