@@ -194,7 +194,7 @@ Formatting some equations using MathML
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      margin-bottom: 10px; /* Add some margin between the image and buttons */
+      margin-bottom: 50px; /* Add some margin between the image and buttons */
     }
 
     .button {
@@ -207,6 +207,15 @@ Formatting some equations using MathML
       cursor: pointer;
       margin: 0 5px; /* Add some margin between the buttons */
     }
+
+      .slide-number-container {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 50px; /* Add some margin between the slide number buttons and the image */
+    }
+    
   </style>
 </head>
 <body>
@@ -215,17 +224,22 @@ Formatting some equations using MathML
 
   <div id="slide-container">
     <img id="slide" src="slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
+
+    <!-- Previous and Next buttons container -->
     <div class="button-container">
-      <!-- Dynamically create and append buttons for each slide -->
+      <button class="button" onclick="prevSlide()">Previous</button>
+      <button class="button" onclick="nextSlide()">Next</button>
+    </div>
+
+    <!-- Slide number buttons container -->
+    <div class="slide-number-container">
       <button class="button" onclick="showSlideNumber(1)">1</button>
       <button class="button" onclick="showSlideNumber(2)">2</button>
       <button class="button" onclick="showSlideNumber(3)">3</button>
       <button class="button" onclick="showSlideNumber(4)">4</button>
-      <button class="button" onclick="prevSlide()">Previous</button>
-      <button class="button" onclick="nextSlide()">Next</button>
     </div>
   </div>
-
+  
   <script>
     // Array of slide image URLs
     var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"]; // Add more slide URLs as needed
