@@ -176,10 +176,59 @@ Formatting some equations using MathML
   
   <hr>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Slideshow</title>
-  <style>
+  
+ 
+
+  <h2>Conference Presentation: Bridge Deck Repairs</h2>
+
+  <script>
+    // Array of slide image URLs
+    var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"]; // Add more slide URLs as needed
+    var currentSlide = 0;
+
+    function showSlide() {
+      document.getElementById('slide').src = slideImages[currentSlide];
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slideImages.length;
+      showSlide();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+      showSlide();
+    }
+
+    // Function to show a specific slide based on the button clicked
+    function showSlideNumber(slideNumber) {
+      currentSlide = slideNumber - 1;
+      showSlide();
+    }
+
+    // Call showSlide() to display the first slide
+    showSlide();
+  </script>
+
+<div id="slide-container">
+    <img id="slide" src="slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
+
+    <!-- Previous and Next buttons container -->
+    <div class="button-container">
+      <button class="button" onclick="prevSlide()">Previous</button>
+      <button class="button" onclick="nextSlide()">Next</button>
+    </div>
+
+    <!-- Slide number buttons container -->
+    <div class="slide-number-container">
+      <button class="button" onclick="showSlideNumber(1)">1</button>
+      <button class="button" onclick="showSlideNumber(2)">2</button>
+      <button class="button" onclick="showSlideNumber(3)">3</button>
+      <button class="button" onclick="showSlideNumber(4)">4</button>
+    </div>
+  </div>
+
+   <style>
     /* Style to center the image */
     #slide-container {
       text-align: center;
@@ -215,57 +264,6 @@ Formatting some equations using MathML
     }
     
   </style>
-
-  <h2>Conference Presentation: Bridge Deck Repairs</h2>
-
-  <div id="slide-container">
-    <img id="slide" src="slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
-
-    <!-- Previous and Next buttons container -->
-    <div class="button-container">
-      <button class="button" onclick="prevSlide()">Previous</button>
-      <button class="button" onclick="nextSlide()">Next</button>
-    </div>
-
-    <!-- Slide number buttons container -->
-    <div class="slide-number-container">
-      <button class="button" onclick="showSlideNumber(1)">1</button>
-      <button class="button" onclick="showSlideNumber(2)">2</button>
-      <button class="button" onclick="showSlideNumber(3)">3</button>
-      <button class="button" onclick="showSlideNumber(4)">4</button>
-    </div>
-  </div>
-  
-  <script>
-    // Array of slide image URLs
-    var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"]; // Add more slide URLs as needed
-    var currentSlide = 0;
-
-    function showSlide() {
-      document.getElementById('slide').src = slideImages[currentSlide];
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slideImages.length;
-      showSlide();
-    }
-
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
-      showSlide();
-    }
-
-    // Function to show a specific slide based on the button clicked
-    function showSlideNumber(slideNumber) {
-      currentSlide = slideNumber - 1;
-      showSlide();
-    }
-
-    // Call showSlide() to display the first slide
-    showSlide();
-  </script>
-
-
   
 
 </body>
