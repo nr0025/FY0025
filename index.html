@@ -266,4 +266,34 @@ Formatting some equations using MathML
 
 </body>
 
+   
+
+    <title>Get Last Modified</title>
+<body>
+    <h1>Last Modified Time</h1>
+    <p id="last-modified">Fetching...</p>
+
+    <script>
+        async function getLastModified(url) {
+            try {
+                const response = await fetch(url, { method: 'HEAD' });
+                const lastModified = response.headers.get('Last-Modified');
+                
+                if (lastModified) {
+                    document.getElementById('last-modified').innerText = `Last Modified: ${lastModified}`;
+                } else {
+                    document.getElementById('last-modified').innerText = 'Last-Modified header not found';
+                }
+            } catch (error) {
+                console.error('Error fetching the last modified time:', error);
+                document.getElementById('last-modified').innerText = 'Error fetching the last modified time';
+            }
+        }
+
+        // Call the function with the URL you want to check
+        getLastModified('https://example.com');
+    </script>
+</body>
+
+
 </html>
