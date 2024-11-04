@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
     <head>
     <img src="WebBanner2023.png" alt="Banner" width="1200" height="300">
-      <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
+      <h1><b>ENG0018 Computer Laboratory 2024/25</b></h1>
       <h2>Student URN: 123456</h2>
     <hr>
     <h2 style="font-family:calibri;"><b>Conference paper: Bridge Deck Repairs</b></h2>
@@ -16,43 +15,39 @@
                 font-family: arial, sans-serif;
                 border-collapse: collapse;
                 width: 30%;
-                
+               
               }
-
               td, th {
                 border: 1px solid #dddddd;
                 text-align: left;
                 padding: 8px;
               }
-
               tr:nth-child(even) {
                 background-color: #dddddd;
               }
-          
-        
-              
-
+         
+       
+             
         </style>
-      
+     
     <style>
 p.ex1 {
   margin-left: 250px;
 }
 </style>
   </head>
-  
+ 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 .mySlides {display:none;}
 </style>
-
 <body style="background-color:#FFFFFF;margin-left:50px;">
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <p class="ex1">
   <!table of contents>
   <table>
-    
+   
   <tr>
     <th><h3>Table of contents</h3></th>
   </tr>
@@ -65,42 +60,62 @@ p.ex1 {
   <tr>
     <td><a href="#Analysis and discussion">Analysis and discussion</td>
   </tr>
-  
+ 
   <tr>
     <td><a href="#References">References</td>
   </tr>
 </table>
+  <!-- ////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Abstract ////////////////////////////// -->
+  <!-- ////////////////////////////////////////////////////////////////////// -->
+ 
   <hr>
   <h3 id="Abstract">Abstract</h3>
   </p>
   <p class="ex1">
-  <pre>
-    This paper presents a novel adaptive active learning strategy. The most accurate classification model from a heterogeneous 
-    classifier pool is selected at each learning epoch. Our goal is to achieve greater incremental improvement in accuracy, compared 
-    to using a single type of classification model throughout the process. The strategy is evaluated on benchmark data sets. 
-    We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive 
+  <pre id="Abstract_InText">
+    This paper presents a novel adaptive active learning strategy. The most accurate classification model from a heterogeneous
+    classifier pool is selected at each learning epoch. Our goal is to achieve greater incremental improvement in accuracy, compared
+    to using a single type of classification model throughout the process. The strategy is evaluated on benchmark data sets.
+    We further consider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive
     active learning and traditional machine learning approaches. Our results show that…We conclude that…
   </pre>
   </p>
-  
-  <h3 id="Introduction">Introduction</h3>
-  <pre>
-    Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an intelligent machine through the 
-    interaction of an oracle with the machine system, over a sequence of learning epochs. A distinctive component in an active system 
-    is the querying strategy, used to sample candidate training instances from a pool and evaluate them for informativeness, 
-    i.e., their potential to improve the classification model. Various strategies have been proposed including; Query by Committee (Seung et al., 1992), 
-    Monte Carlo estimation (Roy and McCallum, 2001), uncertainty sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller, 2001). 
-    Irrespective of how the most informative pattern instances are chosen at each epoch they are presented for labeling, to a machine (database) or human oracle that has 
-    knowledge of the class labels. After adding the newly labeled instances to the current training set, a revised model is subsequently induced. 
-    A goal of this process is to achieve an efficient, incremental advancement of learning at each epoch. The process is continued until some stopping criterion has been met, 
-    such as reaching a stage where information from the selected instances is contrary to the model, causing the classifier confidence to drop, as in Vlachos (2008).
-  </pre>
-
-  <h3 id="Analysis and discussion">Analysis and discussion</h3>
-  Bridge deck repair durability is the subject of much recent research such as in <a href="https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034">Toshihiko et al (2023).</a>
  
-  
-  
+  <!-- ///////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Introduction ////////////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////////////// -->
+  <h3 id="Introduction">Introduction</h3>
+  	<pre id="Introduction_InText">
+Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an intelligent machine through the interaction of an oracle with the machine system, over a sequence of learning epochs. A distinctive component in an active system is the querying strategy, used to sample candidate training instances from a pool and evaluate them for informativeness, i.e., their potential to improve the classification model. Various strategies have been proposed including; Query by Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller, 2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are presented for labeling, to a machine (database) or human oracle that has knowledge of the class labels. After adding the newly labeled instances to the current training set, a revised model is subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of learning at each epoch. The process is continued until some stopping criterion has been met, such as reaching a stage where information from the selected instances is contrary to the model, causing the classifier confidence to drop, as in Vlachos (2008).
+	</pre>
+    
+  <!-- ///////////////////////////////////////////////////////////////////////// -->
+  <!-- //////////////////////// Analysis and discussion //////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////////////// -->
+ 	
+  <h3 id="Analysis and discussion">Analysis and discussion</h3>
+    <p id="Analysis_InText">
+Bridge deck repair durability is the subject of much recent research such as in <a href="https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034">Toshihiko et al (2023).</a>
+ 	<p>    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+  <!-- ///////////////////////////////////////////////////////////////////////// -->
+  <!-- //////////////////////// Analysis and discussion //////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////////////// -->
+ 
+  <h3 id="Analysis and discussion">Analysis and discussion</h3>
+    <p id="Analysis_InText">
+  Bridge deck repair durability is the subject of much recent research such as in <a href="https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034">Toshihiko et al (2023).</a>
+ 	<p>
+ 
+ 
   Table 1: Data on cost and lifespan of bridge repairs
   <table>
   <tr>
@@ -129,11 +144,10 @@ p.ex1 {
   </tr>
 </table>
          
-  
-
+ 
 </script>
 Formatting some equations using MathML
-  
+ 
   <math xmlns = "http://www.w3.org/1998/Math/MathML">
    <mrow>
       <mrow>
@@ -146,182 +160,122 @@ Formatting some equations using MathML
          <mo>+</mo>
          <mn>4</mn>
       </mrow>
-      
+     
       <mo>=</mo>
       <mn>0</mn>
    </mrow>
 </math>
-  
-
+ 
+  <!-- ////////////////////////////////////////////////////////////////////// -->
+  <!-- ///////////////////////////// References //////////////////////////// -->
+  <!-- ///////////////////////////////////////////////////////////////////// -->
+ 
   <h3 id="References">References</h3>
-  
+ 
 <p>
-<pre>
+  <pre id="Reference_InText">
   Angluin, D (1988), Queries and concept learning. Machine learning 2, (4), 319-342.
-
-  Brinker, K (2003), Incorporating Diversity in Active Learning with Support Vector Machines, 
+  Brinker, K (2003), Incorporating Diversity in Active Learning with Support Vector Machines,
   Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003).
-
-  Bruzzone, L, Chi, M and Marconcini, M (2006), A novel transductive SVM for semisupervised classication of remote-sensing images, 
+  Bruzzone, L, Chi, M and Marconcini, M (2006), A novel transductive SVM for semisupervised classication of remote-sensing images,
   IEEE Transactions on Geoscience and Remote Sensing, 44, (11), 3363.
-
-  Bruzzone, L and Persello, C (2009), Active learning for classification of remote sensing images. 
+  Bruzzone, L and Persello, C (2009), Active learning for classification of remote sensing images.
   In: Geoscience and Remote Sensing Symposium, 2009 IEEE International, IGARSS 2009, 3.
-
-  Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margin classifiers. 
+  Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margin classifiers.
   In: Proc. 17th Internat. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA,111–118.
 </pre>
-  
+ 
   </p>
-  
+ 
   <hr>
-
-
-  <h2>Conference Presentation: Bridge Deck Repairs</h2>
-
-  <script>
-    // Array of slide image URLs
-    var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"]; // Add more slide URLs as needed
-    var currentSlide = 0;
-
-    function showSlide() {
-      document.getElementById('slide').src = slideImages[currentSlide];
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slideImages.length;
-      showSlide();
-    }
-
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
-      showSlide();
-    }
-
-    // Function to show a specific slide based on the button clicked
-    function showSlideNumber(slideNumber) {
-      currentSlide = slideNumber - 1;
-      showSlide();
-    }
-
-    // Call showSlide() to display the first slide
-    showSlide();
-  </script>
-  
- <hr> 
-<div id="slide-container">
-    <img id="slide" src="slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
-
-    <!-- Previous and Next buttons container -->
-    <div class="button-container">
-      <button class="button" onclick="prevSlide()">Previous</button>
-      <button class="button" onclick="nextSlide()">Next</button>
-    </div>
-  
-    <!-- Slide number buttons container -->
-    <div class="slide-number-container">
-      <button class="button" onclick="showSlideNumber(1)">1</button>
-      <button class="button" onclick="showSlideNumber(2)">2</button>
-      <button class="button" onclick="showSlideNumber(3)">3</button>
-      <button class="button" onclick="showSlideNumber(4)">4</button>
-    </div>
-  </div>
-
- <hr> 
  
-   <style>
-    /* Style to center the image */
-    #slide-container {
-      text-align: center;
-      position: relative;
-    }
-
-    /* Style for the buttons */
-    .button-container {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: -100px; /* Add some margin between the image and buttons */
-    }
-
-    .button {
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin: 0 5px; /* Add some margin between the buttons */
-    }
-
-      .slide-number-container {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: -50px; /* Add some margin between the slide number buttons and the image */
-    }
-    
-  </style>
-  </body>
-
- <hr>
-    <title>Get Last Modified</title>
-
-<body>
-    <h3>Last Modified Time</h3>
-    <p id="last-modified">Fetching...</p>
-
-    <script>
-        async function getLastUpdatedTime() {
-            const username = 'nr0025';
-            const repo = 'FY0025';
-
-            const url = `https://api.github.com/repos/${username}/${repo}/commits`;
-
-            try {
-                const response = await fetch(url, {
-                    method: 'GET',
-                    headers: {
-                        'Accept': 'application/vnd.github.v3+json',
-                    }
-                });
-
-                if (!response.ok) {
-                    throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
-                }
-
-                const commits = await response.json();
-                if (commits && commits.length > 0) {
-                    const lastCommitDate = new Date(commits[0].commit.committer.date);
-                    document.getElementById('last-updated').innerText = `Last Updated: ${lastCommitDate.toLocaleString()}`;
-                } else {
-                    document.getElementById('last-updated').innerText = 'No commits found in the repository.';
-                }
-            } catch (error) {
-                console.error('Error fetching the last updated time:', error);
-                document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
-            }
-        }
-
-        window.onload = getLastUpdatedTime;
-    </script>
+  <h3>Conference Presentation: Bridge Deck Repairs</h3>
  
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Import the video ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+      <video src="ENG0018 Presentation.mp4" width="800" height="450" controls>
+      </video>
+ 
+ 
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- Last commit time display -->
-    <div id="last-updated">Loading last update time...</div>
-    </script>
-  <hr>
-</body>
-
-
-    
-
-
-
+<div id="last-updated">Loading last update time...</div>
+<!-- Verify Button -->
+<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+    Verify Last Modified Time
+</button>
+<script>
+    async function getLastUpdatedTime() {
+        const username = 'nr0025';
+        const repo = 'FY0025';
+       
+        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+        try {
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json',
+                }
+            });
+            if (!response.ok) {
+                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+            }
+            const commits = await response.json();
+            if (commits && commits.length > 0) {
+                const lastCommitDate = new Date(commits[0].commit.committer.date);
+               
+                // Displaying the time on load
+                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+            } else {
+                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+            }
+        } catch (error) {
+            console.error('Error fetching the last updated time:', error);
+            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+        }
+    }
+    // Function to verify the last update time by re-fetching it from the API
+    async function verifyLastUpdatedTime() {
+        document.getElementById('last-updated').innerText = 'Verifying...';
+        await getLastUpdatedTime();
+        alert("Last modified time has been successfully verified from GitHub API.");
+    }
+    // Initial load to display the time on page load
+    window.onload = getLastUpdatedTime;
+</script>
+ <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    // Calculate the sum of all selected sections
+    const totalWordCount = IntroductionCount + AnalysisCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
 </body>
 </html>
-
-
-
